@@ -8,12 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		A19D1EDC1D63FC5600A6AED7 /* iCaptcha.h in Headers */ = {isa = PBXBuildFile; fileRef = A19D1EDB1D63FC5600A6AED7 /* iCaptcha.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A19D1EE41D63FD8E00A6AED7 /* iCaptcha.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19D1EE31D63FD8E00A6AED7 /* iCaptcha.swift */; };
+		A19D1EE61D63FDD200A6AED7 /* iCaptchaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19D1EE51D63FDD200A6AED7 /* iCaptchaViewController.swift */; };
+		A19D1EE81D63FDF900A6AED7 /* iCaptcha.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19D1EE71D63FDF900A6AED7 /* iCaptcha.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1B8FE311D640C20002E969A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A19D1F071D63FEAE00A6AED7 /* iCaptchaSample.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A19D1EF21D63FEAE00A6AED7;
+			remoteInfo = iCaptchaSample;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A19D1ED81D63FC5500A6AED7 /* iCaptcha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iCaptcha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19D1EDB1D63FC5600A6AED7 /* iCaptcha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iCaptcha.h; sourceTree = "<group>"; };
 		A19D1EDD1D63FC5600A6AED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A19D1EE31D63FD8E00A6AED7 /* iCaptcha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iCaptcha.swift; sourceTree = "<group>"; };
+		A19D1EE51D63FDD200A6AED7 /* iCaptchaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iCaptchaViewController.swift; sourceTree = "<group>"; };
+		A19D1EE71D63FDF900A6AED7 /* iCaptcha.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iCaptcha.storyboard; sourceTree = "<group>"; };
+		A19D1F071D63FEAE00A6AED7 /* iCaptchaSample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iCaptchaSample.xcodeproj; path = iCaptcha/iCaptchaSample/iCaptchaSample.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +47,7 @@
 		A19D1ECE1D63FC5500A6AED7 = {
 			isa = PBXGroup;
 			children = (
+				A19D1F071D63FEAE00A6AED7 /* iCaptchaSample.xcodeproj */,
 				A19D1EDA1D63FC5600A6AED7 /* iCaptcha */,
 				A19D1ED91D63FC5500A6AED7 /* Products */,
 			);
@@ -48,8 +66,19 @@
 			children = (
 				A19D1EDB1D63FC5600A6AED7 /* iCaptcha.h */,
 				A19D1EDD1D63FC5600A6AED7 /* Info.plist */,
+				A19D1EE31D63FD8E00A6AED7 /* iCaptcha.swift */,
+				A19D1EE51D63FDD200A6AED7 /* iCaptchaViewController.swift */,
+				A19D1EE71D63FDF900A6AED7 /* iCaptcha.storyboard */,
 			);
 			path = iCaptcha;
+			sourceTree = "<group>";
+		};
+		A1B8FE2E1D640C20002E969A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1B8FE321D640C20002E969A /* iCaptchaSample.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +137,12 @@
 			mainGroup = A19D1ECE1D63FC5500A6AED7;
 			productRefGroup = A19D1ED91D63FC5500A6AED7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A1B8FE2E1D640C20002E969A /* Products */;
+					ProjectRef = A19D1F071D63FEAE00A6AED7 /* iCaptchaSample.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A19D1ED71D63FC5500A6AED7 /* iCaptcha */,
@@ -115,11 +150,22 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		A1B8FE321D640C20002E969A /* iCaptchaSample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = iCaptchaSample.app;
+			remoteRef = A1B8FE311D640C20002E969A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		A19D1ED61D63FC5500A6AED7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A19D1EE81D63FDF900A6AED7 /* iCaptcha.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A19D1EE41D63FD8E00A6AED7 /* iCaptcha.swift in Sources */,
+				A19D1EE61D63FDD200A6AED7 /* iCaptchaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +278,7 @@
 		A19D1EE11D63FC5600A6AED7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -240,12 +289,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.DLS.iCaptcha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		A19D1EE21D63FC5600A6AED7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -278,6 +329,7 @@
 				A19D1EE21D63FC5600A6AED7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

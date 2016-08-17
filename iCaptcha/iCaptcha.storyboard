@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A294a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KQu-Bi-eXt">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Captcha View Controller-->
+        <scene sceneID="NEx-lI-3MT">
+            <objects>
+                <viewController id="KQu-Bi-eXt" customClass="iCaptchaViewController" customModule="iCaptcha" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L9A-0U-c6J"/>
+                        <viewControllerLayoutGuide type="bottom" id="NBi-z2-wTX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Wv-9U-phz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jeJ-kw-3c8">
+                                <rect key="frame" x="120" y="120" width="360" height="360"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wQs-MQ-0Us">
+                                        <rect key="frame" x="36" y="116" width="288" height="129"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8eM4W" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CzD-31-R34">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="38"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ix4-KP-rXZ">
+                                                <rect key="frame" x="0.0" y="48" width="288" height="21"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atq-cT-Ub8">
+                                                <rect key="frame" x="0.0" y="79" width="288" height="0.0"/>
+                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
+                                                <color key="textColor" red="1" green="0.071388102149999993" blue="0.19126986230000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="5Hl-8N-JiE">
+                                                <rect key="frame" x="0.0" y="89" width="288" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAS-UU-YSm">
+                                                        <rect key="frame" x="0.0" y="0.0" width="136" height="40"/>
+                                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Kailasa-Bold" family="Kailasa" pointSize="15"/>
+                                                        <state key="normal" title="Reload">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeH-nZ-EHJ">
+                                                        <rect key="frame" x="152" y="0.0" width="136" height="40"/>
+                                                        <color key="backgroundColor" red="1" green="0.34002801840000002" blue="0.37259693319999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Kailasa-Bold" family="Kailasa" pointSize="17"/>
+                                                        <state key="normal" title="Submit">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="wQs-MQ-0Us" firstAttribute="width" secondItem="jeJ-kw-3c8" secondAttribute="width" multiplier="0.8" id="Gg0-pY-rpl"/>
+                                    <constraint firstItem="wQs-MQ-0Us" firstAttribute="centerX" secondItem="jeJ-kw-3c8" secondAttribute="centerX" id="bmF-ll-ncs"/>
+                                    <constraint firstItem="wQs-MQ-0Us" firstAttribute="centerY" secondItem="jeJ-kw-3c8" secondAttribute="centerY" id="iw8-Qb-gqu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jeJ-kw-3c8" firstAttribute="centerY" secondItem="8Wv-9U-phz" secondAttribute="centerY" id="01I-Mb-k6r"/>
+                            <constraint firstItem="jeJ-kw-3c8" firstAttribute="centerX" secondItem="8Wv-9U-phz" secondAttribute="centerX" id="E6d-t6-gl7"/>
+                            <constraint firstItem="jeJ-kw-3c8" firstAttribute="width" secondItem="8Wv-9U-phz" secondAttribute="width" multiplier="0.6" id="i4F-o7-wB3"/>
+                            <constraint firstItem="jeJ-kw-3c8" firstAttribute="height" secondItem="8Wv-9U-phz" secondAttribute="height" multiplier="0.6" id="mZe-un-7Hu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="jeJ-kw-3c8" id="zAp-rv-alv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KQQ-W4-qyu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="313" y="383"/>
+        </scene>
+    </scenes>
+</document>
