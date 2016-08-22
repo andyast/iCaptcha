@@ -25,7 +25,9 @@ class ViewController: UIViewController {
 
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        vc = iCaptcha.load()
+        vc = iCaptcha.show({ success in
+            self.presentedViewController?.dismissViewControllerAnimated(true, completion: nil)
+        })
         // self.view.addSubview(vc.view)
         vc.modalPresentationStyle = .OverCurrentContext
         vc.modalTransitionStyle = .CrossDissolve

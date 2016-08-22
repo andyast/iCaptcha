@@ -9,12 +9,15 @@
 import Foundation
 public class iCaptcha {
 
-    public static func load() -> UIViewController {
+    public static func show(completion: (Bool) -> ()) -> UIViewController {
 
         let storyboardName = "iCaptcha"
         let storyboardBundle = NSBundle(forClass: self)
         let storyboard = UIStoryboard(name: storyboardName, bundle: storyboardBundle)
 
-        return storyboard.instantiateInitialViewController()!
+        let vc = storyboard.instantiateInitialViewController() as! iCaptchaViewController
+
+        vc.completion = completion
+        return vc
     }
 }

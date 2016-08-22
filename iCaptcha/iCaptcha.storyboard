@@ -18,74 +18,109 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jeJ-kw-3c8">
-                                <rect key="frame" x="120" y="120" width="360" height="360"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDG-db-xRx">
+                                <rect key="frame" x="65" y="40" width="470" height="160"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wQs-MQ-0Us">
+                                <rect key="frame" x="75" y="50" width="450" height="140"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wQs-MQ-0Us">
-                                        <rect key="frame" x="36" y="116" width="288" height="129"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8eM4W" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CzD-31-R34">
+                                        <rect key="frame" x="0.0" y="0.0" width="450" height="40"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="gM6-Ub-qhI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ix4-KP-rXZ">
+                                        <rect key="frame" x="0.0" y="50" width="450" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="A8Q-vG-Cb0"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atq-cT-Ub8">
+                                        <rect key="frame" x="0.0" y="100" width="450" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
+                                        <color key="textColor" red="1" green="0.071388102149999993" blue="0.19126986230000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="5Hl-8N-JiE">
+                                        <rect key="frame" x="0.0" y="110" width="450" height="30"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8eM4W" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CzD-31-R34">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="38"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ix4-KP-rXZ">
-                                                <rect key="frame" x="0.0" y="48" width="288" height="21"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atq-cT-Ub8">
-                                                <rect key="frame" x="0.0" y="79" width="288" height="0.0"/>
-                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
-                                                <color key="textColor" red="1" green="0.071388102149999993" blue="0.19126986230000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="5Hl-8N-JiE">
-                                                <rect key="frame" x="0.0" y="89" width="288" height="40"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAS-UU-YSm">
-                                                        <rect key="frame" x="0.0" y="0.0" width="136" height="40"/>
-                                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" name="Kailasa-Bold" family="Kailasa" pointSize="15"/>
-                                                        <state key="normal" title="Reload">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </state>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeH-nZ-EHJ">
-                                                        <rect key="frame" x="152" y="0.0" width="136" height="40"/>
-                                                        <color key="backgroundColor" red="1" green="0.34002801840000002" blue="0.37259693319999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" name="Kailasa-Bold" family="Kailasa" pointSize="17"/>
-                                                        <state key="normal" title="Submit">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </state>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAS-UU-YSm">
+                                                <rect key="frame" x="0.0" y="0.0" width="139" height="30"/>
+                                                <color key="backgroundColor" red="0.12245008680555555" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="v5p-hJ-ceZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Kailasa-Bold" family="Kailasa" pointSize="15"/>
+                                                <state key="normal" title="Cancel">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cancel_Action:" destination="KQu-Bi-eXt" eventType="touchUpInside" id="FEI-lo-m4m"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0k-i4-F6K">
+                                                <rect key="frame" x="155" y="0.0" width="140" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.49803921568627452" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="eeW-pn-lb8"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Kailasa-Bold" family="Kailasa" pointSize="15"/>
+                                                <state key="normal" title="Reload">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="reload_Action:" destination="KQu-Bi-eXt" eventType="touchUpInside" id="ebw-Jt-fMc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeH-nZ-EHJ">
+                                                <rect key="frame" x="311" y="0.0" width="139" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.34002801840000002" blue="0.37259693319999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="yqF-IZ-fJy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Kailasa-Bold" family="Kailasa" pointSize="17"/>
+                                                <state key="normal" title="Submit">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="submit_Action:" destination="KQu-Bi-eXt" eventType="touchUpInside" id="MLM-oY-CLe"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="wQs-MQ-0Us" firstAttribute="width" secondItem="jeJ-kw-3c8" secondAttribute="width" multiplier="0.8" id="Gg0-pY-rpl"/>
-                                    <constraint firstItem="wQs-MQ-0Us" firstAttribute="centerX" secondItem="jeJ-kw-3c8" secondAttribute="centerX" id="bmF-ll-ncs"/>
-                                    <constraint firstItem="wQs-MQ-0Us" firstAttribute="centerY" secondItem="jeJ-kw-3c8" secondAttribute="centerY" id="iw8-Qb-gqu"/>
-                                </constraints>
-                            </view>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="jeJ-kw-3c8" firstAttribute="centerY" secondItem="8Wv-9U-phz" secondAttribute="centerY" id="01I-Mb-k6r"/>
-                            <constraint firstItem="jeJ-kw-3c8" firstAttribute="centerX" secondItem="8Wv-9U-phz" secondAttribute="centerX" id="E6d-t6-gl7"/>
-                            <constraint firstItem="jeJ-kw-3c8" firstAttribute="width" secondItem="8Wv-9U-phz" secondAttribute="width" multiplier="0.6" id="i4F-o7-wB3"/>
-                            <constraint firstItem="jeJ-kw-3c8" firstAttribute="height" secondItem="8Wv-9U-phz" secondAttribute="height" multiplier="0.6" id="mZe-un-7Hu"/>
+                            <constraint firstItem="wQs-MQ-0Us" firstAttribute="width" secondItem="8Wv-9U-phz" secondAttribute="width" multiplier="0.75" id="2Nd-v7-5aJ"/>
+                            <constraint firstItem="wQs-MQ-0Us" firstAttribute="centerX" secondItem="8Wv-9U-phz" secondAttribute="centerX" id="B7v-h4-tGb"/>
+                            <constraint firstItem="bDG-db-xRx" firstAttribute="leading" secondItem="wQs-MQ-0Us" secondAttribute="leading" constant="-10" id="EEe-LU-llS"/>
+                            <constraint firstItem="bDG-db-xRx" firstAttribute="width" secondItem="wQs-MQ-0Us" secondAttribute="width" constant="20" id="FUa-a8-gpq"/>
+                            <constraint firstItem="bDG-db-xRx" firstAttribute="top" secondItem="wQs-MQ-0Us" secondAttribute="top" constant="-10" id="eal-jR-gRO"/>
+                            <constraint firstItem="bDG-db-xRx" firstAttribute="height" secondItem="wQs-MQ-0Us" secondAttribute="height" constant="20" id="fcx-4w-ziN"/>
+                            <constraint firstItem="wQs-MQ-0Us" firstAttribute="top" secondItem="L9A-0U-c6J" secondAttribute="bottom" constant="30" id="k0C-Y8-mr2"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="containerView" destination="jeJ-kw-3c8" id="zAp-rv-alv"/>
+                        <outlet property="cancel_Button" destination="gAS-UU-YSm" id="E01-3X-avi"/>
+                        <outlet property="captcha_Field" destination="ix4-KP-rXZ" id="VV2-G3-AeN"/>
+                        <outlet property="captcha_Label" destination="CzD-31-R34" id="14x-ra-PLE"/>
+                        <outlet property="containerView" destination="bDG-db-xRx" id="67v-SB-D20"/>
+                        <outlet property="error_Label" destination="atq-cT-Ub8" id="3n6-5X-DSk"/>
+                        <outlet property="reload_Button" destination="h0k-i4-F6K" id="XHo-Cd-9n7"/>
+                        <outlet property="submit_Button" destination="QeH-nZ-EHJ" id="wZ6-Ax-gvh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KQQ-W4-qyu" userLabel="First Responder" sceneMemberID="firstResponder"/>
