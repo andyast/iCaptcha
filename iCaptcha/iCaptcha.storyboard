@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A294a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KQu-Bi-eXt">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -19,11 +18,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDG-db-xRx">
-                                <rect key="frame" x="65" y="40" width="470" height="160"/>
+                                <rect key="frame" x="65" y="110" width="470" height="160"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wQs-MQ-0Us">
-                                <rect key="frame" x="75" y="50" width="450" height="140"/>
+                                <rect key="frame" x="75" y="120" width="450" height="140"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8eM4W" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CzD-31-R34">
                                         <rect key="frame" x="0.0" y="0.0" width="450" height="40"/>
@@ -110,7 +109,7 @@
                             <constraint firstItem="bDG-db-xRx" firstAttribute="width" secondItem="wQs-MQ-0Us" secondAttribute="width" constant="20" id="FUa-a8-gpq"/>
                             <constraint firstItem="bDG-db-xRx" firstAttribute="top" secondItem="wQs-MQ-0Us" secondAttribute="top" constant="-10" id="eal-jR-gRO"/>
                             <constraint firstItem="bDG-db-xRx" firstAttribute="height" secondItem="wQs-MQ-0Us" secondAttribute="height" constant="20" id="fcx-4w-ziN"/>
-                            <constraint firstItem="wQs-MQ-0Us" firstAttribute="top" secondItem="L9A-0U-c6J" secondAttribute="bottom" constant="30" id="k0C-Y8-mr2"/>
+                            <constraint firstItem="wQs-MQ-0Us" firstAttribute="top" secondItem="L9A-0U-c6J" secondAttribute="bottom" constant="100" id="k0C-Y8-mr2"/>
                         </constraints>
                     </view>
                     <connections>

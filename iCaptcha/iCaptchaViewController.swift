@@ -25,7 +25,7 @@ class iCaptchaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.ExtraLight)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
         // always fill the view
         blurEffectView.frame = self.view.bounds
@@ -50,15 +50,15 @@ class iCaptchaViewController: UIViewController {
         reload_captcha()
     }
 
-    @IBAction public func cancel_Action(id: UIButton) {
+    @IBAction func cancel_Action(id: UIButton) {
         completion(success: false)
     }
 
-    @IBAction public func reload_Action(id: UIButton) {
+    @IBAction func reload_Action(id: UIButton) {
         reload_captcha()
     }
 
-    @IBAction public func submit_Action(id: UIButton) {
+    @IBAction func submit_Action(id: UIButton) {
         error_Label.text = ""
 
         if captcha_Field.text?.caseInsensitiveCompare(captcha) == .OrderedSame {

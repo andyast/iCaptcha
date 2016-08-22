@@ -7,7 +7,7 @@
 //
 
 import Foundation
-public class iCaptcha {
+@objc public class iCaptcha: NSObject {
 
     public static func show(completion: (Bool) -> ()) -> UIViewController {
 
