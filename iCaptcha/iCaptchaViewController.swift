@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class iCaptchaViewController: UIViewController {
+class iCaptchaViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var cancel_Button: UIButton!
     @IBOutlet var reload_Button: UIButton!
@@ -25,7 +25,7 @@ class iCaptchaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.ExtraLight)
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Dark)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
         // always fill the view
         blurEffectView.frame = self.view.bounds
@@ -48,6 +48,7 @@ class iCaptchaViewController: UIViewController {
         submit_Button.layer.cornerRadius = 5;
 
         reload_captcha()
+
     }
 
     @IBAction func cancel_Action(id: UIButton) {
@@ -80,30 +81,22 @@ class iCaptchaViewController: UIViewController {
 
         var chars = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 
-        let i1 = Int(arc4random()) % chars.count
-        let i2 = Int(arc4random()) % chars.count
-        let i3 = Int(arc4random()) % chars.count
-        let i4 = Int(arc4random()) % chars.count
-        let i5 = Int(arc4random()) % chars.count
+        let charsCount = UInt(chars.count)
 
-        captcha = "\(chars[i1])\(chars[i2])\(chars[i3])\(chars[i4])\(chars[i5])"
+        let i1 = UInt(arc4random()) % charsCount
+        let i2 = UInt(arc4random()) % charsCount
+        let i3 = UInt(arc4random()) % charsCount
+        let i4 = UInt(arc4random()) % charsCount
+        let i5 = UInt(arc4random()) % charsCount
+
+        captcha = "\(chars[Int(i1)])\(chars[Int(i2)])\(chars[Int(i3)])\(chars[Int(i4)])\(chars[Int(i5)])"
 
         captcha_Label.text = captcha
+        captcha_Field.becomeFirstResponder()
     }
-    /*
-     - (IBAction) Submit_Action: (id) sender {
 
-     NSLog("%@ = %", Captcha_label.text, Captcha_field.text);
-     if ([Captcha_label.text isEqualToString: Captcha_field.text]) {
-     [self.view endEditing: YES];
-     Status_label.text = "Success";
-     Status_label.textColor = [UIColor greenColor];
-     } else {
-     Status_label.text = "Faild";
-     Status_label.textColor = [UIColor redColor];
-
-     }
-
-     }
-     */
+    public func textFieldShouldReturn(textField: UITextField) -> Bool {
+        submit_Action(submit_Button)
+        return true
+    }
 }
