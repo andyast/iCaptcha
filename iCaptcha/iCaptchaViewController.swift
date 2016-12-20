@@ -95,7 +95,7 @@ class iCaptchaViewController: UIViewController, UITextFieldDelegate {
         captcha_Field.becomeFirstResponder()
     }
 
-    public func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
         submit_Action(submit_Button)
         return true
     }
